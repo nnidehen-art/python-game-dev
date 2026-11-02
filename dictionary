@@ -1,0 +1,44 @@
+#creating a dictonairy
+sample_dict={'name':'Nosa','age':11,'hobby':'planes'}
+print(sample_dict,'\n')
+
+#retrieve an item from dict
+print(f'Student Name:{sample_dict["name"]}\n')
+
+#acces a value, using the get()
+print(f' hobby (using get()): {sample_dict.get("hobby")}\n')
+
+#retrieve age
+print(f'Student Age:{sample_dict["age"]}\n')
+
+#adding item to the dict
+sample_dict['favourite food']='pizza'
+print(sample_dict,'\n')
+print(f'favorite food:{sample_dict["favourite food"]}\n')
+
+#update an item in dict
+print(f"Before update, age = {sample_dict.get('age')}")
+
+#updating age as 15 years
+sample_dict['age'] = 15
+print(f'updated age:{sample_dict}\n')
+
+#popitem() will delete the last key_value pair for the dict.
+sample_dict.popitem()
+print(sample_dict,'\n')
+
+#pop() will delete a perticular key value from dict
+sample_dict.pop('age')
+print(f"deleted item 'age' from dict:{sample_dict} \n")
+
+# to remove all items from a dictionary
+sample_dict.clear()
+print(sample_dict,'\n')
+
+#Create a Python dictionary whose keys are some floating-point numbers.You can assign them any values.
+float_as_keys_dict = {3.14:'Pi',2.71:"e"}
+print(float_as_keys_dict,'\n')
+
+#Create a Python dictonary whose keys are interger values. You can assign them any values.
+integer_as_keys_dict = {1:"one",99:"ninety-nine"}
+print(integer_as_keys_dict,'\n')
