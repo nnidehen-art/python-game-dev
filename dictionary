@@ -42,3 +42,36 @@ print(float_as_keys_dict,'\n')
 #Create a Python dictonary whose keys are interger values. You can assign them any values.
 integer_as_keys_dict = {1:"one",99:"ninety-nine"}
 print(integer_as_keys_dict,'\n')
+
+#store a list as a value in the dict
+sample_dict["marks"] = [99,87,85,92,90]
+print(sample_dict,'\n')
+
+#access a value in the list stored
+print(sample_dict['marks'][1])
+print("\n")
+
+#create a nested dictionarys
+classroom={
+    "Nosa":{"age":11,
+            "marks":[11,12,13,14,15]
+            },
+    "Shalom":{"age":12,
+              "marks":[12,13,14,15,16]
+              },
+    "Kingsley":{"age":11,
+                "marks":[13,14,15,16,17]}
+}
+
+print(classroom,"\n")
+
+#get the age of "kingsley"
+print(classroom["Kingsley"]["age"],"\n")
+
+print(classroom["Nosa"]["marks"],"\n")
+
+print(classroom["Shalom"]["marks"][2],"\n")
+
+#updating the marks of "Kingsley"
+classroom["Kingsley"]["marks"][3]=20
+print(classroom["Kingsley"],"\n")
